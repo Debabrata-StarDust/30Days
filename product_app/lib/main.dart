@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'view/auth/login.dart';
 
@@ -16,13 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Product App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
-        ),
+        primaryColor: Colors.deepPurple,
         useMaterial3: true,
       ),
       home: const LoginView(),
-      routes: {},
     );
   }
 }
