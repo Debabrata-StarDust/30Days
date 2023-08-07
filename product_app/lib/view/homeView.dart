@@ -7,8 +7,11 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MyDrawer(),
-      body: AppBar(),
+      drawer: const MyDrawer(),
+      body: AppBar(
+        centerTitle: true,
+        title: Text("Catalog"),
+      ),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:product_app/widgets/theme.dart';
 
 import 'view/auth/login.dart';
 
@@ -16,10 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Product App',
-      theme: ThemeData(
-        primaryColor: Colors.deepPurple,
-        useMaterial3: true,
-      ),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       home: const LoginView(),
     );
   }
